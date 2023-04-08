@@ -1,10 +1,53 @@
+.css-selector {
+    background: linear-gradient(131deg, #ffffff, #5d3fd3, #000000);
+    background-size: 600% 600%;
+
+    -webkit-animation: coretech 50s ease infinite;
+    -moz-animation: coretech 50s ease infinite;
+    -o-animation: coretech 50s ease infinite;
+    animation: coretech 50s ease infinite;
+}
+
+@-webkit-keyframes coretech {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@-moz-keyframes coretech {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@-o-keyframes coretech {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@keyframes coretech {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
 .login-logo
 {
     width: 150px;
-    position: absolute;
-    top: 5vh;
-    left: calc(50vw - 75px);
+    position: relative;
     color: #00ffff;
+    padding-bottom: 30px;
+}
+.form-control:focus
+{
+    color: #fff;
+    border: #5D3FD3 1px solid !important;
+}
+.p-input:focus
+{
+    color: white !important;
+}
+.grid-center
+{
+    display: grid;
+    place-items: center;
 }
 .bottom-ever
 {
