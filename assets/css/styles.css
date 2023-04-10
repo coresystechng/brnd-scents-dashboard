@@ -30,7 +30,7 @@
 }
 .login-logo
 {
-    width: 150px;
+    width: 100px;
     position: relative;
     color: #00ffff;
     padding-bottom: 30px;
@@ -51,7 +51,7 @@
 }
 .bottom-ever
 {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -171,4 +171,9 @@
     z-index: 9999;
     display: grid;
     place-items: center;
+  }
+  .sm
+  {
+    font-size: 10px;
+    color: #939393;
   }

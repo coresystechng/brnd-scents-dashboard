@@ -11425,7 +11425,7 @@ input[type="button"].btn-block {
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem; }
+  padding: 1.25rem;}
 
 .card-title {
   margin-bottom: 0.75rem; }
@@ -15762,8 +15762,7 @@ code {
 
 /* Footer */
 .footer {
-  background: #000000;
-  padding: 20px 1rem;
+  padding: 1rem 0;
   transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
