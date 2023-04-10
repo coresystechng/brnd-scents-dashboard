@@ -15,6 +15,7 @@
     <!-- endinject -->
     <!-- Layout styles -->
     <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
   </head>
@@ -36,21 +37,23 @@
           <div class="row flex-grow">
             <div class="col-lg-7 mx-auto text-white">
               <div class="row align-items-center d-flex flex-row">
-                <div class="col-lg-8 text-lg-right pr-lg-4">
-                  <img src="/assets/images/500.gif" alt="500 Page">
+                <div class="col-lg-7 text-lg-right pr-lg-4">
+                  <img src="/assets/images/500.gif" width="100%" alt="500 Page">
                 </div>
-                <div class="col-lg-4 error-page-divider text-lg-left pl-lg-4 text-primary">
+                <div class="col-lg-5 error-page-divider text-lg-left pl-lg-4 text-primary">
                   <h2 class="font-weight-bold">SORRY!</h2>
-                  <h3 class="font-weight-light">Internal server error.</h3>
+                  <span class="font-weight-light text-success">Internal server error.</span> <br>
                   <br>
-                  <a class="text-white bg-primary rounded-pill btn-dark p-3" href="../../index.html">Back to home</a>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-block enter-btn py-3">Back to Home</button>
+                  </div>
                 </div>
               </div>
-              <div class="row mt-5">
-                <div class="col-12 mt-xl-2">
-                  <p class="text-white font-weight-medium text-center text-primary">&copy; BRND SCENTS 2023. Built by <a href="https://github.com/coresystechng" class="text-primary"><u>CORE-TECH</u></a>.</p>
+              <footer class="footer bg-transparent bottom-ever">
+                <div class="w-100 grid-center">
+                    <span class="d-block text-center text-black"><b>&copy; BRND SCENTS 2023. Built by <u><a href="https://github.com/coresystechng">CORE-TECH</a></u></b>.</span>
                 </div>
-              </div>
+            </footer>
             </div>
           </div>
         </div>

@@ -1,3 +1,17 @@
+.btn-primary:hover
+{
+    background-color: white;
+    color: black !important;
+    border: 1px solid #a63493;
+}
+.switch>.row
+{
+    display: none;
+}
+.switch>.row.active
+{
+    display: block;
+}
 .css-selector {
     background: linear-gradient(131deg, #ffffff, #5d3fd3, #000000);
     background-size: 600% 600%;

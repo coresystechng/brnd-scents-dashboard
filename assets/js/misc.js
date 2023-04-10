@@ -114,5 +114,14 @@ window.addEventListener('load', function() {
   function wait(){
     preloader.style.display = 'none';
   }
-  setTimeout(wait, 500)
+  setTimeout(wait, 1500)
 });
+
+const swit = document.getElementsByClassName('switch');
+const switCtrl = document.getElementsByClassName('switchcontrol');
+
+if(swit && switCtrl)
+{
+  console.log('lol')
+  
+}
