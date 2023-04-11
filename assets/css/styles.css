@@ -4,13 +4,18 @@
     color: black !important;
     border: 1px solid #a63493;
 }
-.switch>.row
+.switch>.conm
 {
     display: none;
 }
-.switch>.row.active
+.switch>.conm.active
 {
     display: block;
+}
+@
+.show-on-med
+{
+
 }
 .css-selector {
     background: linear-gradient(131deg, #ffffff, #5d3fd3, #000000);
