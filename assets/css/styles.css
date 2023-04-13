@@ -1,21 +1,40 @@
+.hide-on-sm {
+  display: block; /* default display value */
+}
+
+@media only screen and (max-width: 574px) {
+  .hide-on-sm {
+    display: none; /* hide on small screens */
+  }
+}
+.hide-on-lg {
+  display: block; /* default display value */
+}
+
+@media only screen and (min-width: 575px) {
+  .hide-on-lg {
+    display: none; /* hide on large screens */
+  }
+}
+.switchback
+{
+    position: absolute;
+    top: 25px;
+    left: 50px;
+}
 .btn-primary:hover
 {
     background-color: white;
     color: black !important;
     border: 1px solid #a63493;
 }
-.switch>.conm
+.switch>.row
 {
     display: none;
 }
-.switch>.conm.active
+.switch>.row.active
 {
     display: block;
-}
-@
-.show-on-med
-{
-
 }
 .css-selector {
     background: linear-gradient(131deg, #ffffff, #5d3fd3, #000000);
