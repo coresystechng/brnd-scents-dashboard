@@ -1,7 +1,23 @@
 .hide-on-sm {
   display: block; /* default display value */
 }
-
+.gold
+{
+    color: #ffd700 !important;
+}
+.lime
+{
+    color: lime !important;
+}
+.logo
+{
+    color: white;
+    font-size: 140%;
+    position: relative;
+    top: 10px;
+    letter-spacing: 35px;
+    left: 4px;
+}
 @media only screen and (max-width: 574px) {
   .hide-on-sm {
     display: none; /* hide on small screens */
