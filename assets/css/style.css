@@ -7690,7 +7690,8 @@ fieldset {
   min-width: 0;
   padding: 0;
   margin: 0;
-  border: 0; }
+  border: 0; 
+color: #a63493}
 
 legend {
   display: block;
