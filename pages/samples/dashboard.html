@@ -29,7 +29,7 @@
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
   </head>
   <body class=" overflow-hidden">
-    <!-- <div id="preloader">
+    <div id="preloader">
       <div id="loader">
         <span class="load">
           <div class="three-body">
@@ -39,7 +39,7 @@
           </div>
         </span>
       </div>
-    </div> -->
+    </div>
     <div class="container-scroller  overflow-hidden">
       <!-- partial:../../partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
@@ -58,7 +58,7 @@
             <span class="nav-link">Navigation</span>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="../../index.html">
+            <a class="nav-link" href="dashboard.html">
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
@@ -66,7 +66,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="../../pages/forms/basic_elements.html">
+            <a class="nav-link" href="order.html">
               <span class="menu-icon">
                 <i class="mdi mdi-truck-delivery"></i>
               </span>
@@ -126,19 +126,9 @@
             >
               <span class="mdi mdi-menu"></span>
             </button>
-            <ul class="navbar-nav w-100">
-              <li class="nav-item w-100">
-                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Search products"
-                  />
-                </form>
-              </li>
-            </ul>
             <ul class="navbar-nav navbar-nav-right">
               <li class="nav-item dropdown">
+                <span class="text-gray">Amount  : </span>
                 <span class="profit"> ₦297,100</span>
               </li>
               <li class="nav-item dropdown border-left">
@@ -195,7 +185,7 @@
                     </div>
                   </a>
                   <div class="dropdown-divider"></div>
-                  <p class="p-3 mb-0 text-center">See all notifications</p>
+                  <a href="#"><p class="p-3 mb-0 text-center">See all notifications</p></a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -212,7 +202,7 @@
                       alt=""
                     />
                     <p class="mb-0 d-none d-sm-block navbar-profile-name">
-                      #2972097
+                      OUY
                     </p>
                     <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                   </div>
@@ -221,7 +211,7 @@
                   class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                   aria-labelledby="profileDropdown"
                 >
-                  <h6 class="p-3 mb-0">Profile</h6>
+                  <h6 class="p-3 mb-0 text-center">-=======-</h6>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
@@ -245,7 +235,7 @@
                     </div>
                   </a>
                   <div class="dropdown-divider"></div>
-                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                  <p class="p-3 mb-0 text-center">-=======-</p>
                 </div>
               </li>
             </ul>
@@ -273,17 +263,12 @@
                             class="d-flex align-items-center align-self-start"
                           >
                             <h3 class="mb-0">$12.34</h3>
-                            <p
-                              class="text-success ml-2 mb-0 font-weight-medium"
-                            >
-                              +3.5%
-                            </p>
                           </div>
                         </div>
                         <div class="col-3">
                           <div class="icon icon-box-success">
                             <span
-                              class="mdi mdi-arrow-top-right icon-item"
+                              class="mdi mdi-shopping icon-item"
                             ></span>
                           </div>
                         </div>
@@ -301,17 +286,12 @@
                             class="d-flex align-items-center align-self-start"
                           >
                             <h3 class="mb-0">$17.34</h3>
-                            <p
-                              class="text-success ml-2 mb-0 font-weight-medium"
-                            >
-                              +11%
-                            </p>
                           </div>
                         </div>
                         <div class="col-3">
                           <div class="icon icon-box-success">
                             <span
-                              class="mdi mdi-arrow-top-right icon-item"
+                              class="mdi mdi-cash-marker icon-item"
                             ></span>
                           </div>
                         </div>
@@ -329,15 +309,12 @@
                             class="d-flex align-items-center align-self-start"
                           >
                             <h3 class="mb-0">$12.34</h3>
-                            <p class="text-danger ml-2 mb-0 font-weight-medium">
-                              -2.4%
-                            </p>
                           </div>
                         </div>
                         <div class="col-3">
-                          <div class="icon icon-box-danger">
+                          <div class="icon icon-box-success">
                             <span
-                              class="mdi mdi-arrow-bottom-left icon-item"
+                              class="mdi mdi-cash-refund icon-item"
                             ></span>
                           </div>
                         </div>
@@ -355,17 +332,12 @@
                             class="d-flex align-items-center align-self-start"
                           >
                             <h3 class="mb-0">$31.53</h3>
-                            <p
-                              class="text-success ml-2 mb-0 font-weight-medium"
-                            >
-                              +3.5%
-                            </p>
                           </div>
                         </div>
                         <div class="col-3">
                           <div class="icon icon-box-success">
                             <span
-                              class="mdi mdi-arrow-top-right icon-item"
+                              class="mdi mdi-cash-multiple icon-item"
                             ></span>
                           </div>
                         </div>
@@ -411,7 +383,7 @@
                               <td>$194,500</td>
                               <td>
                                 <div class="badge badge-outline-warning">
-                                  Pending
+                                  Processing
                                 </div>
                               </td>
                               <td>
@@ -424,7 +396,7 @@
                               <td>$101,300</td>
                               <td>
                                 <div class="badge badge-outline-danger">
-                                  On Hold
+                                  Pending
                                 </div>
                               </td>
                               <td>
@@ -555,7 +527,7 @@
                                   <td>$194,500</td>
                                   <td>
                                     <div class="badge badge-outline-warning">
-                                      Pending
+                                      Processing
                                     </div>
                                   </td>
                                   <td>
@@ -570,7 +542,7 @@
                                   <td>$101,300</td>
                                   <td>
                                     <div class="badge badge-outline-danger">
-                                      On Hold
+                                      Pending
                                     </div>
                                   </td>
                                   <td>
