@@ -114,7 +114,7 @@ window.addEventListener('load', function() {
   function wait(){
     preloader.style.display = 'none';
   }
-  setTimeout(wait, 1500)
+  setTimeout(wait, 500)
 });
 
 document.addEventListener('DOMContentLoaded', function() {

@@ -316,11 +316,15 @@ body,html
   
   ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background: linear-gradient(to bottom, #101010, #4f4f4f, #101010);
+    background: white;
+    background-size: 900%;
+    background-position: center;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, #101010, #a63493, #101010);
+    background: #a63493;
+    background-size: 900%;
+    background-position: center;
   }
   
   ::-webkit-scrollbar-track {

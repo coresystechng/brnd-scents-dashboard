@@ -464,12 +464,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-8 grid-margin stretch-card">
+                <div class="col-md-4 grid-margin stretch-card">
                   <div class="card">
                     <div class="card-body">
                       <div class="d-flex flex-row justify-content-between">
-                        <h4 class="card-title mb-1">Inventory Brief</h4>
-                        <p class="text-muted mb-1">List Of New Items In The Inventory</p>
+                        <h4 class="card-title mb-1">Inventory</h4>
                       </div>
                       <br />
                       <div class="row">
@@ -478,54 +477,43 @@
                             <table class="table">
                               <thead>
                                 <tr>
-                                  <th>Order ID</th>
-                                  <th>Date</th>
-                                  <th>Amount</th>
-                                  <th>Status</th>
+                                  <th>Quantity</th>
+                                  <th>Name</th>
                                   <th>Action</th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
-                                  <td>02312</td>
-                                  <td>04 Dec 2019</td>
-                                  <td>$14,500</td>
-                                  <td>
-                                    <div class="badge badge-outline-success">Approved</div>
-                                  </td>
+                                  <td>34</td>
+                                  <td>Mineral</td>
                                   <td>
                                     <button class="btn-primary btn">View</button>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>02997</td>
-                                  <td>29 Feb 2019</td>
-                                  <td>$194,500</td>
-                                  <td>
-                                    <div class="badge badge-outline-warning">Processing</div>
-                                  </td>
+                                  <td>14</td>
+                                  <td>Salt</td>
                                   <td>
                                     <button class="btn-primary btn">View</button>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>01312</td>
-                                  <td>12 Dec 2019</td>
-                                  <td>$101,300</td>
-                                  <td>
-                                    <div class="badge badge-outline-danger">Pending</div>
-                                  </td>
+                                  <td>108</td>
+                                  <td>And</td>
                                   <td>
                                     <button class="btn-primary btn">View</button>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>19282</td>
-                                  <td>08 May 2022</td>
-                                  <td>$92,100</td>
+                                  <td>04</td>
+                                  <td>Water</td>
                                   <td>
-                                    <div class="badge badge-outline-success">Approved</div>
+                                    <button class="btn-primary btn">View</button>
                                   </td>
+                                </tr>
+                                <tr>
+                                  <td>04</td>
+                                  <td>Water</td>
                                   <td>
                                     <button class="btn-primary btn">View</button>
                                   </td>
@@ -533,6 +521,24 @@
                               </tbody>
                             </table>
                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex flex-row justify-content-between">
+                        <h4 class="card-title mb-1">News Section</h4>
+                      </div>
+                      <br />
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="../../assets/images/auth/lockscreen-bg.jpg" width="100%" style="border-radius: 10px;" alt=""><br><br>
+                          <p>
+                            Bala blu different army symbol our bulaba our blu broooom army broooom our bala pdapc eneme bala transmission bala bala cassava bala electricty corn blu garri tia-tia mpower super recruit youths.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -557,28 +563,37 @@
                 >
                 <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
                   ><a
+                    class=""
                     href="https://github.com/coresystechng"
                     target="_blank"
                     id="coreTech"
                     >CORE-TECH &ThickSpace;</a
                   ></span>
-                <script>
-                  function updateTime() {
-                    var now = new Date();
-                    var hours = now.getHours();
-                    var minutes = now.getMinutes();
-                    var seconds = now.getSeconds();
-
-                    var timeString = hours + ':' + minutes + ':' + seconds;
-                    document.getElementById('coreTech').textContent = timeString;
-                  }
-
-                  // Update the time immediately
-                  updateTime();
-
-                  // Update the time every second
-                  setInterval(updateTime, 1000);
-                </script>
+                  <script>
+                    function updateTime() {
+                      var now = new Date();
+                      var hours = now.getHours();
+                      var minutes = now.getMinutes();
+                      var seconds = now.getSeconds();
+                      var ampm = hours >= 12 ? 'PM' : 'AM';
+                  
+                      // Convert hours to 12-hour format
+                      hours = hours % 12 || 12;
+                  
+                      // Add leading zeros to minutes and seconds if necessary
+                      minutes = minutes < 10 ? '0' + minutes : minutes;
+                      seconds = seconds < 10 ? '0' + seconds : seconds;
+                  
+                      var timeString = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+                      document.getElementById('coreTech').textContent = timeString;
+                    }
+                  
+                    // Update the time immediately
+                    updateTime();
+                  
+                    // Update the time every second
+                    setInterval(updateTime, 1000);
+                  </script>                  
               </div>
             </footer>
           </div>
