@@ -87,7 +87,7 @@
           <li class="nav-item menu-items">
             <a
               class="nav-link"
-              href="../../pages/tables/basic-table.html">
+              href="#">
               <span class="menu-icon">
                 <i class="mdi mdi-table-large"></i>
               </span>
@@ -97,7 +97,7 @@
           <li class="nav-item menu-items">
             <a
               class="nav-link"
-              href="../../pages/charts/chartjs.html">
+              href="#">
               <span class="menu-icon">
                 <i class="mdi mdi-cash-100"></i>
               </span>
@@ -117,7 +117,7 @@
           <li class="nav-item menu-items">
             <a
               class="nav-link"
-              href="../../pages/icons/mdi.html">
+              href="#">
               <span class="menu-icon">
                 <i class="mdi mdi-chat"></i>
               </span>
@@ -134,7 +134,8 @@
             <a
               class="navbar-brand brand-logo-mini"
               href="../../index.html"
-              ><p class="logo">B</p></a>
+              ><p class="logo">B</p></a
+            >
           </div>
           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
             <button
@@ -150,7 +151,7 @@
                   class="nav-link"
                   href="#"
                   ><li class="nav-item dropdown">
-                    <span class="profit"> ₦297,100</span>
+                    <span class="profit">PROFIT: &ThickSpace; ₦297,100</span>
                   </li>
                 </a>
               </li>
@@ -225,16 +226,14 @@
                 <div
                   class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                   aria-labelledby="profileDropdown">
-                  <h6 class="p-3 mb-0">Profile</h6>
-                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
-                        <i class="mdi mdi-settings text-success"></i>
+                        <i class="mdi mdi-account text-success"></i>
                       </div>
                     </div>
                     <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Settings</p>
+                      <p class="preview-subject mb-1">Profile</p>
                     </div>
                   </a>
                   <div class="dropdown-divider"></div>
@@ -248,8 +247,6 @@
                       <p class="preview-subject mb-1">Log out</p>
                     </div>
                   </a>
-                  <div class="dropdown-divider"></div>
-                  <p class="p-3 mb-0 text-center">Advanced settings</p>
                 </div>
               </li>
             </ul>
@@ -535,9 +532,15 @@
                       <br />
                       <div class="row">
                         <div class="col-12">
-                          <img src="../../assets/images/auth/lockscreen-bg.jpg" width="100%" style="border-radius: 10px;" alt=""><br><br>
+                          <img
+                            src="../../assets/images/auth/lockscreen-bg.jpg"
+                            width="100%"
+                            style="border-radius: 10px"
+                            alt="" /><br /><br />
                           <p>
-                            Bala blu different army symbol our bulaba our blu broooom army broooom our bala pdapc eneme bala transmission bala bala cassava bala electricty corn blu garri tia-tia mpower super recruit youths.
+                            Bala blu different army symbol our bulaba our blu broooom army broooom our bala pdapc eneme
+                            bala transmission bala bala cassava bala electricty corn blu garri tia-tia mpower super
+                            recruit youths.
                           </p>
                         </div>
                       </div>
@@ -568,32 +571,33 @@
                     target="_blank"
                     id="coreTech"
                     >CORE-TECH &ThickSpace;</a
-                  ></span>
-                  <script>
-                    function updateTime() {
-                      var now = new Date();
-                      var hours = now.getHours();
-                      var minutes = now.getMinutes();
-                      var seconds = now.getSeconds();
-                      var ampm = hours >= 12 ? 'PM' : 'AM';
-                  
-                      // Convert hours to 12-hour format
-                      hours = hours % 12 || 12;
-                  
-                      // Add leading zeros to minutes and seconds if necessary
-                      minutes = minutes < 10 ? '0' + minutes : minutes;
-                      seconds = seconds < 10 ? '0' + seconds : seconds;
-                  
-                      var timeString = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
-                      document.getElementById('coreTech').textContent = timeString;
-                    }
-                  
-                    // Update the time immediately
-                    updateTime();
-                  
-                    // Update the time every second
-                    setInterval(updateTime, 1000);
-                  </script>                  
+                  ></span
+                >
+                <script>
+                  function updateTime() {
+                    var now = new Date();
+                    var hours = now.getHours();
+                    var minutes = now.getMinutes();
+                    var seconds = now.getSeconds();
+                    var ampm = hours >= 12 ? 'PM' : 'AM';
+
+                    // Convert hours to 12-hour format
+                    hours = hours % 12 || 12;
+
+                    // Add leading zeros to minutes and seconds if necessary
+                    minutes = minutes < 10 ? '0' + minutes : minutes;
+                    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+                    var timeString = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+                    document.getElementById('coreTech').textContent = timeString;
+                  }
+
+                  // Update the time immediately
+                  updateTime();
+
+                  // Update the time every second
+                  setInterval(updateTime, 1000);
+                </script>
               </div>
             </footer>
           </div>
