@@ -134,10 +134,8 @@
             <a
               class="navbar-brand brand-logo-mini"
               href="../../index.html"
-              ><img
-                src="../../assets/images/logo-mini.svg"
-                alt="logo"
-            /></a>
+              ><p class="logo">B</p></a
+            >
           </div>
           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
             <button
@@ -146,9 +144,16 @@
               data-toggle="minimize">
               <span class="mdi mdi-menu"></span>
             </button>
+            <ul class="navbar-nav w-100"></ul>
             <ul class="navbar-nav navbar-nav-right">
-              <li class="nav-item dropdown">
-                <span class="profit"> ₦297,100</span>
+              <li class="nav-item nav-settings d-none d-lg-block">
+                <a
+                  class="nav-link"
+                  href="#"
+                  ><li class="nav-item dropdown">
+                    <span class="profit">PROFIT: &ThickSpace; ₦297,100</span>
+                  </li>
+                </a>
               </li>
               <li class="nav-item dropdown border-left">
                 <a
@@ -214,23 +219,21 @@
                       class="img-xs rounded-circle"
                       src="../../assets/images/faces/face15.jpg"
                       alt="" />
-                    <p class="mb-0 d-none d-sm-block navbar-profile-name">#2972097</p>
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">OUY</p>
                     <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                   </div>
                 </a>
                 <div
                   class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                   aria-labelledby="profileDropdown">
-                  <h6 class="p-3 mb-0">Profile</h6>
-                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
-                        <i class="mdi mdi-settings text-success"></i>
+                        <i class="mdi mdi-account text-success"></i>
                       </div>
                     </div>
                     <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Settings</p>
+                      <p class="preview-subject mb-1">Profile</p>
                     </div>
                   </a>
                   <div class="dropdown-divider"></div>
@@ -244,8 +247,6 @@
                       <p class="preview-subject mb-1">Log out</p>
                     </div>
                   </a>
-                  <div class="dropdown-divider"></div>
-                  <p class="p-3 mb-0 text-center">Advanced settings</p>
                 </div>
               </li>
             </ul>
@@ -261,13 +262,40 @@
         <div
           id="modal"
           class="modal">
-          <p
-            id="modalCloseBtn"
-            class="modal-close">
-            ↪
-          </p>
-          <div class="modal-content bg-transparent">
-            <div class="card p-2">Bala blu transmission super symbol line townhall cassava garri line down-payment bala blu our super down-payment recruit from transmission bala broooom mpower tia-tia from tia-tia line symbol down-payment army transmission super bala transmission recruit eba recruit roasted bala different corn electricty umbreleda townhall broooom bala army transmission bala from townhall blu army army down-payment electricty bala different symbol eba blu bala different broooom bulaba army agbado transmission cassava transmission bala different townhall army army pdapc broooom pdapc army tia-tia roasted pdapc eba highway electricty symbol blu electricty recruit corn army eba broooom bala eba blu blu garri generated bala youths umbreleda eba electricty bala blu our electricty garri electricty symbol from transmission agbado bala bala eneme blu youths blu 50million electricty generated pdapc cassava army 50million blu blu cassava blu youths tia-tia 50million bala from bala blu blu electricty eba agbado garri electricty roasted bala garri blu blu tia-tia agbado line broooom blu corn roasted blu townhall highway tia-tia umbreleda 50million cassava symbol our different transmission broooom from blu umbreleda corn our symbol townhall broooom our symbol recruit roasted corn roasted corn bala corn broooom tia-tia bulaba eneme symbol garri from corn eneme tia-tia bulaba electricty blu 50million umbreleda broooom</div>
+          <div class="modal-con bg-tranparent">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">#0312</h4>
+                <p class="card-description"> 22nd May,<code> 2023</code>
+                </p>
+                <i
+                  id="modalCloseBtn"
+                  class="modal-close mdi mdi-close">
+                </i>
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <tbody>
+                      <tr>
+                        <td> Herman Beck </td>
+                        <td class="text-right"> $ 77.99 </td>
+                      </tr>
+                      <tr>
+                        <td> Herman Beck </td>
+                        <td class="text-right"> $ 77.99 </td>
+                      </tr>
+                      <tr>
+                        <td> Herman Beck </td>
+                        <td class="text-right"> $ 77.99 </td>
+                      </tr>
+                      <tr>
+                        <td> Herman Beck </td>
+                        <td class="text-right"> $ 77.99 </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -283,7 +311,7 @@
                         <h4 class="card-title">Order Brief</h4>
                       </div>
                       <div class="col-6 text-right">
-                        <button id="newOrderBtn" class="btn btn-secondary modal-open">new +</button>
+                        <button class="btn btn-secondary" id="newOrderBtn">new +</button>
                       </div>
                     </div>
                     <div class="table-responsive">
@@ -303,10 +331,10 @@
                             <td>04 Dec 2019</td>
                             <td>$14,500</td>
                             <td>
-                              <div class="badge badge-outline-success">Approved</div>
+                              <div class="badge badge-success br-20">Approved</div>
                             </td>
                             <td>
-                              <button class="btn-primary btn ">View</button>
+                              <button class="btn-primary btn openModal">View</button>
                             </td>
                           </tr>
                           <tr>
@@ -314,10 +342,10 @@
                             <td>29 Feb 2019</td>
                             <td>$194,500</td>
                             <td>
-                              <div class="badge badge-outline-warning">Processing</div>
+                              <div class="badge badge-warning br-20">Processing</div>
                             </td>
                             <td>
-                              <button class="btn-primary btn">View</button>
+                              <button class="btn-primary btn openModal">View</button>
                             </td>
                           </tr>
                           <tr>
@@ -325,10 +353,10 @@
                             <td>12 Dec 2019</td>
                             <td>$101,300</td>
                             <td>
-                              <div class="badge badge-outline-danger">Pending</div>
+                              <div class="badge badge-danger br-20">Pending</div>
                             </td>
                             <td>
-                              <button class="btn-primary btn">View</button>
+                              <button class="btn-primary btn openModal">View</button>
                             </td>
                           </tr>
                           <tr>
@@ -336,10 +364,10 @@
                             <td>08 May 2022</td>
                             <td>$92,100</td>
                             <td>
-                              <div class="badge badge-outline-success">Approved</div>
+                              <div class="badge badge-success br-20">Approved</div>
                             </td>
                             <td>
-                              <button class="btn-primary btn">View</button>
+                              <button class="btn-primary btn openModal">View</button>
                             </td>
                           </tr>
                         </tbody>
@@ -356,15 +384,47 @@
             <footer class="footer">
               <div class="d-sm-flex justify-content-center justify-content-sm-between">
                 <span class="text-muted d-block text-center text-sm-left d-sm-inline-block"
-                  >&copy; BRND SCENTS 2023. Built by</span
+                  >&copy; BRND SCENTS 2023. Built by
+                  <a
+                    href="https://github.com/coresystechng"
+                    target="_blank"
+                    >&ThickSpace; CORE-TECH
+                  </a></span
                 >
                 <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
                   ><a
+                    class=""
                     href="https://github.com/coresystechng"
                     target="_blank"
+                    id="coreTech"
                     >CORE-TECH &ThickSpace;</a
                   ></span
                 >
+                <script>
+                  function updateTime() {
+                    var now = new Date();
+                    var hours = now.getHours();
+                    var minutes = now.getMinutes();
+                    var seconds = now.getSeconds();
+                    var ampm = hours >= 12 ? 'PM' : 'AM';
+
+                    // Convert hours to 12-hour format
+                    hours = hours % 12 || 12;
+
+                    // Add leading zeros to minutes and seconds if necessary
+                    minutes = minutes < 10 ? '0' + minutes : minutes;
+                    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+                    var timeString = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+                    document.getElementById('coreTech').textContent = timeString;
+                  }
+
+                  // Update the time immediately
+                  updateTime();
+
+                  // Update the time every second
+                  setInterval(updateTime, 1000);
+                </script>
               </div>
             </footer>
           </div>
@@ -377,14 +437,16 @@
     <!-- container-scroller -->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        var newOrderBtn = document.getElementById('newOrderBtn');
+        var openModalBtns = document.querySelectorAll('.openModal');
         var modal = document.getElementById('modal');
         var modalCloseBtn = document.getElementById('modalCloseBtn');
-
-        newOrderBtn.addEventListener('click', function () {
-          modal.classList.add('show');
+  
+        openModalBtns.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            modal.classList.add('show');
+          });
         });
-
+  
         modalCloseBtn.addEventListener('click', function () {
           modal.classList.remove('show');
         });
