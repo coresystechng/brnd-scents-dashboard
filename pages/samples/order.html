@@ -266,8 +266,7 @@
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">#0312</h4>
-                <p class="card-description"> 22nd May,<code> 2023</code>
-                </p>
+                <p class="card-description">22nd May, 2023</p>
                 <i
                   id="modalCloseBtn"
                   class="modal-close mdi mdi-close">
@@ -276,20 +275,92 @@
                   <table class="table table-hover">
                     <tbody>
                       <tr>
-                        <td> Herman Beck </td>
-                        <td class="text-right"> $ 77.99 </td>
+                        <td>
+                          Herman Beck
+                          <p class="greyed-no">x3pcs</p>
+                        </td>
+                        <td class="text-right">$ 77.99</td>
                       </tr>
                       <tr>
-                        <td> Herman Beck </td>
-                        <td class="text-right"> $ 77.99 </td>
+                        <td>
+                          Herman Beck
+                          <p class="greyed-no">x3pcs</p>
+                        </td>
+                        <td class="text-right">$ 77.99</td>
                       </tr>
                       <tr>
-                        <td> Herman Beck </td>
-                        <td class="text-right"> $ 77.99 </td>
+                        <td>
+                          Herman Beck
+                          <p class="greyed-no">x3pcs</p>
+                        </td>
+                        <td class="text-right">$ 77.99</td>
                       </tr>
                       <tr>
-                        <td> Herman Beck </td>
-                        <td class="text-right"> $ 77.99 </td>
+                        <td>
+                          Herman Beck
+                          <p class="greyed-no">x3pcs</p>
+                        </td>
+                        <td class="text-right">$ 77.99</td>
+                      </tr>
+                      <tr>
+                        <td class="greyed-no">232pcs</td>
+                        <td class="text-right total">Total: $ 777.99</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div
+          id="modal1"
+          class="modal">
+          <div class="modal-con bg-tranparent">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">#0312</h4>
+                <p class="card-description">22nd May, 2023</p>
+                <i
+                  id="OrderCloseBtn"
+                  class="modal-close mdi mdi-close">
+                </i>
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <tbody class="form">
+                      <tr>
+                        <td>
+                          <input type="text" placeholder="Herman Beck">
+                          <p class="greyed-no">x <input type="number" placeholder="3" onkeypress="adjustWidth()"> pcs</p>
+                        </td> 
+                        <td class="text-right">$ 77.99</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Herman Beck
+                          <p class="greyed-no">x3pcs</p>
+                        </td>
+                        <td class="text-right">$ 77.99</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Herman Beck
+                          <p class="greyed-no">x3pcs</p>
+                        </td>
+                        <td class="text-right">$ 77.99</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Herman Beck
+                          <p class="greyed-no">x3pcs</p>
+                        </td>
+                        <td class="text-right">$ 77.99</td>
+                      </tr>
+                      <tr>
+                        <td class="greyed-no">232pcs</td>
+                        <td class="text-right total">Total: $ 777.99</td>
                       </tr>
                     </tbody>
                   </table>
@@ -311,7 +382,11 @@
                         <h4 class="card-title">Order Brief</h4>
                       </div>
                       <div class="col-6 text-right">
-                        <button class="btn btn-secondary" id="newOrderBtn">new +</button>
+                        <button
+                          class="btn btn-secondary OrderModal"
+                          id="">
+                          new +
+                        </button>
                       </div>
                     </div>
                     <div class="table-responsive">
@@ -440,16 +515,33 @@
         var openModalBtns = document.querySelectorAll('.openModal');
         var modal = document.getElementById('modal');
         var modalCloseBtn = document.getElementById('modalCloseBtn');
-  
+
         openModalBtns.forEach(function (btn) {
           btn.addEventListener('click', function () {
             modal.classList.add('show');
           });
         });
-  
+
         modalCloseBtn.addEventListener('click', function () {
           modal.classList.remove('show');
         });
+        
+        var openModalBtn = document.querySelectorAll('.OrderModal');
+        var modal1 = document.getElementById('modal1');
+        var modalCloseBtn1 = document.getElementById('OrderCloseBtn');
+
+        openModalBtn1.addEventListener('click', function () {
+            modal1.classList.add('show');
+          });
+
+        modalCloseBtn1.addEventListener('click', function () {
+          modal1.classList.remove('show');
+        });
+
+        function adjustWidth()
+        {
+          this.style.width = ((this.value.length + 1) * 8) + 'px';
+        }
       });
     </script>
     <!-- plugins:js -->
