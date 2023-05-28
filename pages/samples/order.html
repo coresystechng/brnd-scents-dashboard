@@ -314,7 +314,6 @@
           </div>
         </div>
 
-
         <div
           id="modal1"
           class="modal">
@@ -332,9 +331,21 @@
                     <tbody class="form">
                       <tr>
                         <td>
-                          <input type="text" placeholder="Herman Beck">
-                          <p class="greyed-no">x <input type="number" placeholder="3" onkeypress="adjustWidth()"> pcs</p>
-                        </td> 
+                          <select
+                            name="lol"
+                            id="">
+                            <option value="Herman Beck">Herman Beck</option>
+                            <option value="The King Crane">The King Crane</option>
+                          </select>
+                          <p class="greyed-no">
+                            x
+                            <input
+                              type="number"
+                              placeholder="3"
+                              onkeypress="this.style.width = (this.value.length + 1) * 7 + 'px'" />
+                            pcs
+                          </p>
+                        </td>
                         <td class="text-right">$ 77.99</td>
                       </tr>
                       <tr>
@@ -425,6 +436,7 @@
                           </tr>
                           <tr>
                             <td>01312</td>
+
                             <td>12 Dec 2019</td>
                             <td>$101,300</td>
                             <td>
@@ -525,22 +537,21 @@
         modalCloseBtn.addEventListener('click', function () {
           modal.classList.remove('show');
         });
-        
-        var openModalBtn = document.querySelectorAll('.OrderModal');
+
+        var openModalBtn = document.querySelector('.OrderModal');
         var modal1 = document.getElementById('modal1');
         var modalCloseBtn1 = document.getElementById('OrderCloseBtn');
 
-        openModalBtn1.addEventListener('click', function () {
-            modal1.classList.add('show');
-          });
+        openModalBtn.addEventListener('click', function () {
+          modal1.classList.add('show');
+        });
 
         modalCloseBtn1.addEventListener('click', function () {
           modal1.classList.remove('show');
         });
 
-        function adjustWidth()
-        {
-          this.style.width = ((this.value.length + 1) * 8) + 'px';
+        function adjustWidth() {
+          this.style.width = (this.value.length + 1) * 8 + 'px';
         }
       });
     </script>
