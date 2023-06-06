@@ -12,6 +12,16 @@ html {
 .lime {
   color: lime !important;
 }
+.form-error
+{
+  color: red;
+  width: 100%;
+  padding: 8px;
+  margin: 5px;
+  font-weight: 700;
+  border-radius: 1px;
+  text-align: center;
+}
 .logo {
   color: white;
   font-size: 140%;

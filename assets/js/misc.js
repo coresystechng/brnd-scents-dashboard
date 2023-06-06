@@ -117,63 +117,34 @@ window.addEventListener('load', function() {
   setTimeout(wait, 500)
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  // your JavaScript code goes here
-  // Get all the rows of input fields
-  const rows = document.querySelectorAll('.switch .row');
+document.addEventListener('DOMContentLoaded', function () {
+  var switchControl = document.querySelector('.switchControl');
+  var hiddenSwitch = document.querySelector('.hiddenSwitch');
 
-  // Set the initial active row to be the first row
-  let activeRow = rows[0];
-
-  // Add a click event listener to the "Next" button
-  document.querySelector('.switchcontrol').addEventListener('click', (event) => {
-    // Prevent the default form submission behavior
-    event.preventDefault();
-
-    // Get the index of the active row
-    const index = Array.from(rows).indexOf(activeRow);
-
-    // If the active row is not the last row, add the active class to the next row
-    if (index < rows.length - 1) {
-      activeRow.classList.remove('active');
-      activeRow = rows[index + 1];
-      activeRow.classList.add('active');
-    }
-
-    // Change the text content of the "Next" button to "Submit" on the last row
-    if (index === rows.length - 2) {
-      document.querySelector('.switchcontrol').textContent = 'Submit';
-    }
-
-    // Disable the "Next" button on the last row
-    if (index === rows.length - 1) {
-      document.querySelector('.switchcontrol').setAttribute('disabled', true);
-    }
+  switchControl.addEventListener('click', function () {
+    this.style.display = 'none';
+    hiddenSwitch.style.display = 'block';
   });
 
-  // Add a click event listener to the "Previous" button
-  document.querySelector('.switchback').addEventListener('click', (event) => {
-    // Prevent the default form submission behavior
-    event.preventDefault();
+  hiddenSwitch.addEventListener('click', function () {
+    var form = this.closest('form');
+    form.submit();
+  });
 
-    // Get the index of the active row
-    const index = Array.from(rows).indexOf(activeRow);
-
-    // If the active row is not the first row, add the active class to the previous row
-    if (index > 0) {
-      activeRow.classList.remove('active');
-      activeRow = rows[index - 1];
-      activeRow.classList.add('active');
-    }
-
-    // Enable the "Next" button
-    document.querySelector('.switchcontrol').removeAttribute('disabled');
-
-    // Change the text content of the "Next" button back to "Next" if it was changed
-    if (index === rows.length - 2) {
-      document.querySelector('.switchcontrol').textContent = 'Next';
-    }
+  var switchback = document.querySelector('.switchback');
+  switchback.addEventListener('click', function () {
+    var form = this.closest('form');
+    form.querySelector('.switchControl').style.display = 'block';
+    hiddenSwitch.style.display = 'none';
   });
 });
+
+function toUpperCase()
+{
+  var start = this.selectionStart;
+  var end = this.selectionEnd;
+  this.value = this.value.toUpperCase();
+  this.setSelectionRange(start, end);
+}
 
 
