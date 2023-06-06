@@ -291,6 +291,7 @@ input[type=number]
                 <div class="text-center">
                   <i class="mdi-arrow-left mdi switchback mdi-36px"></i>
                   <button type="submit" class="btn btn-primary btn-block enter-btn switchcontrol">Next</button>
+                  <button type="submit" style="display: none" class="btn btn-primary btn-block enter-btn hiddenSwitch">Sub mit</button>
                 </div>
               </form>
               <form class="hide-on-sm" method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
@@ -350,7 +351,7 @@ input[type=number]
                   </div>
                 </div><br>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary btn-block enter-btn switchcontrol">Submit</button>
+                  <button type="submit" class="btn btn-primary btn-block enter-btn switchControl">Submit</button>
                 </div>
               </form>
             </div>
