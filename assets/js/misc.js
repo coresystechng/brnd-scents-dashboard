@@ -148,6 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Disable the "Next" button on the last row
     if (index === rows.length - 1) {
       document.querySelector('.switchcontrol').setAttribute('disabled', true);
+      submitForm(); // Call the function to submit the form
     }
   });
 
@@ -174,6 +175,20 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.switchcontrol').textContent = 'Next';
     }
   });
+
+  // Function to submit the form
+  function submitForm() {
+ 
+  }
 });
+
+
+function toUpperCase()
+{
+  var start = this.selectionStart;
+  var end = this.selectionEnd;
+  this.value = this.value.toUpperCase();
+  this.setSelectionRange(start, end);
+}
 
 
