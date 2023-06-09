@@ -147,4 +147,42 @@ function toUpperCase()
   this.setSelectionRange(start, end);
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the main-img element
+  const mainImg = document.getElementById('main-img');
 
+  // Get the bg-img element
+  const bgImg = document.getElementById('bg-img');
+
+  // Check if both elements exist
+  if (mainImg && bgImg) {
+    // Create a new image element
+    const bgImgCopy = new Image();
+
+    // Set the source of the new image element to the source of the main image
+    bgImgCopy.src = mainImg.src;
+
+    // Apply CSS styles to the bg-img element
+    bgImg.style.backgroundImage = `url('${bgImgCopy.src}')`;
+    bgImg.style.backgroundSize = 'cover';
+    bgImg.style.backgroundPosition = 'center';
+    bgImg.style.filter = 'contrast(1.5) blur(2px) brightness(0.8)';
+  }
+});
+
+const tbodyRows = document.querySelectorAll('tbody tr');
+const productPreview = document.getElementById('product-preview');
+const backButton = document.getElementById('backButton');
+
+tbodyRows.forEach((row) => {
+  row.addEventListener('click', () => {
+    productPreview.style.display = 'block';
+    backButton.style.display = 'block';
+  });
+});
+
+backButton.addEventListener('click', () => {
+  productPreview.style.display = 'none';
+  backButton.style.display = 'none';
+});
+  
