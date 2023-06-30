@@ -120,10 +120,18 @@ window.addEventListener('load', function() {
 document.addEventListener('DOMContentLoaded', function () {
   var switchControl = document.querySelector('.switchControl');
   var hiddenSwitch = document.querySelector('.hiddenSwitch');
+  var rows = document.querySelectorAll('.xvn');
+  var currentIndex = 0;
 
   switchControl.addEventListener('click', function () {
-    this.style.display = 'none';
-    hiddenSwitch.style.display = 'block';
+    rows[currentIndex].classList.remove('active');
+    currentIndex++;
+    rows[currentIndex].classList.add('active');
+
+    if (currentIndex === rows.length - 1) {
+      switchControl.style.display = 'none';
+      hiddenSwitch.style.display = 'block';
+    }
   });
 
   hiddenSwitch.addEventListener('click', function () {
@@ -133,11 +141,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var switchback = document.querySelector('.switchback');
   switchback.addEventListener('click', function () {
-    var form = this.closest('form');
-    form.querySelector('.switchControl').style.display = 'block';
-    hiddenSwitch.style.display = 'none';
+    if (currentIndex > 0) {
+      rows[currentIndex].classList.remove('active');
+      currentIndex--;
+      rows[currentIndex].classList.add('active');
+
+      if (currentIndex !== rows.length - 1) {
+        switchControl.style.display = 'block';
+        hiddenSwitch.style.display = 'none';
+      }
+    }
   });
 });
+
+
 
 function toUpperCase()
 {
@@ -147,4 +164,45 @@ function toUpperCase()
   this.setSelectionRange(start, end);
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the main-img element
+  const mainImg = document.getElementById('main-img');
 
+  // Get the bg-img element
+  const bgImg = document.getElementById('bg-img');
+
+  // Check if both elements exist
+  if (mainImg && bgImg) {
+    // Create a new image element
+    const bgImgCopy = new Image();
+    
+    // Set the source of the new image element to the source of the main image
+    bgImgCopy.src = mainImg.src;
+
+    // Apply CSS styles to the bg-img element
+    bgImg.style.backgroundImage = `url('${bgImgCopy.src}')`;
+    bgImg.style.backgroundSize = 'cover';
+    bgImg.style.backgroundPosition = 'center';
+    bgImg.style.filter = 'contrast(1.5) blur(2px) brightness(0.8)';
+  }
+});
+
+const tbodyRows = document.querySelectorAll('tbody tr');
+const productPreview = document.getElementById('product-preview');
+const backButton = document.getElementById('backButton');
+var pRow = document.getElementById('product-row');
+
+tbodyRows.forEach((row) => {
+  row.addEventListener('click', () => {
+    productPreview.style.display = 'block';
+    backButton.style.display = 'block';
+    pRow.style.display = 'none';
+  });
+});
+
+backButton.addEventListener('click', () => {
+  productPreview.style.display = 'none';
+  backButton.style.display = 'none';
+  pRow.style.display = 'block';
+});
+  

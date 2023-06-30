@@ -20,7 +20,7 @@
   <link rel="shortcut icon" href="../assets/images/favicon.png" />
 </head>
 <body>
-  <div id="preloader">
+  <!-- <div id="preloader">
     <div id="loader">
         <span class="load">
           <div class="three-body">
@@ -30,7 +30,7 @@
             </div>
         </span>
     </div>
-  </div>
+  </div> -->
   <div class="container-scroller">
     <div class="container-fluid page-body-wrapper full-page-wrapper">
       <div class="row w-100 m-0">
@@ -48,7 +48,7 @@
                   // Perform login authentication
                   if (authenticateUser($retailer_code, $password)) {
                       // Login successful, redirect to the welcome page
-                      header("Location: ../pages/samples/dashboard.html");
+                      header("Location: ../pages/dashboard.html");
                       exit();
                   } else {
                       // Login failed, display error message
@@ -100,7 +100,7 @@
                   return false;
               }
               ?>
-              <form id="loginForm" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+              <form id="loginForm" method="POST" action="">
                 <div class="form-group">
                   <label>Retailers Code</label>
                   <input type="text" class="form-control p_input" name="retailer_code" id="retailerCodeInput">
@@ -114,6 +114,7 @@
                 </div>
               </form>
             </div>
+            <a href="register.php"><button type="none" class="btn btn-block">Register</button></a>
             <footer class="footer bg-transparent">
               <div class="w-100 grid-center">
                 <span class="d-block text-center"><b>&copy; BRND SCENTS 2023. Built by <u><a href="https://github.com/coresystechng" target="_blank">CORE-TECH</a></u></b>.</span>
